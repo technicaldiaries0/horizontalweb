@@ -9,4 +9,4 @@ spec:
     - name: horizontalweb
       image: technicaldiaries0/horizontalwebimage:latest
       ports:
-        - containerPort: 8484
+        - containerPort: 8080
