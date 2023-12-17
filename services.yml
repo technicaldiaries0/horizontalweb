@@ -2,11 +2,13 @@ kind: Service
 apiVersion: v1
 metadata:
   name: horizontalweb
+  labels:
+    app: horizontalweb
 spec:
   selector:
     app: horizontalweb
   ports:
   - protocol: TCP
     port: 80
-    targetPort: 8080
+    targetPort: 32500
   type: NodePort 
