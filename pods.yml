@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: horizontalweb
+  labels:
+    app: horizontalweb
+spec:
+  containers:
+    - name: horizontalweb
+      image: technicaldiaries0/horizontalwebimage:latest
+      ports:
+        - containerPort: 8484
